@@ -1,5 +1,3 @@
 <?php
-
-include_once("project3.html");
-
+include_once("project3.html";
 ?>
