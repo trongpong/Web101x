@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-stretch: narrower;
+    font-size: small;
+}
+
+body{
+    background-color: #efefef;
+}
+
+/* Mobile */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.margin-left{
+    margin-left: 5%;
+}
+.padding-right{
+    padding-right: 10%;
+}
+  
+.margin-right{
+    margin-right:5%;
+}
+
+.nav-wrapper{
+    height: 40px;
+    background-color: #9b9595;
+}
+
+.nav-wrapper .nav li{
+    list-style-type: none;
+    float: left;
+}
+
+.nav-wrapper .nav  li  a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-right: 10px;
+    line-height: 40px;
+}
+   
+.banner .banner-text{
+    margin: 5% 0;
+}
+
+.content .description{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.image div img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.footer .footer__item{
+    margin: 20% 0;
+}
+
+.footer .footer__item a{
+    margin-top: 1%;
+    color:black; 
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+
+    .nav-wrapper{
+        display: flex;
+        flex-flow: row;
+        justify-content:space-between;
+    }
+
+    .content .image{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image .img-col-a img,
+    .image .img-col-b img{
+        height: 172px;
+    }
+
+    .content .image .img-col-b{
+        padding-left: 20px;
+    }
+
+    .footer .footer__item a{
+        color: rgb(14, 149, 233);
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+
+   
+    .nav-wrapper{
+        display: flex;
+        flex-flow: row;
+        justify-content:space-between;
+        background-color: #efefef;
+    }
+    .nav-wrapper .nav  li  a{
+        color: rgb(31, 29, 29);
+    }
+
+    .banner hr {
+    display: none;
+    }
+
+    .banner {
+        background-image: url(https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 100%;
+        height: 500px;
+        margin-left: 0px;
+        color: white;
+        position: relative;  
+    }
+
+    .banner .banner-text{
+        margin: 0;
+        position: absolute;
+        top: 150px;
+    }
+
+    .banner h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .content .description h2{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .content .description p{
+        font-size: 15px;
+    }
+
+    .content .image {
+        display: flex;
+        justify-content: space-evenly
+    }
+
+    .col-md-4 {
+        float: left;
+    }
+
+    .image .img-col-a img{
+        height: 172px;
+    }
+    .image .img-col-b img{
+        padding-left: 20px;
+        height: 172px;
+    }
+    .image .img-col-c img{
+        padding-left: 20px;
+        height: 344px; 
+    }
+
+    .footer .padding-left{
+        padding-left: 20px;
+    } 
+
+    .footer .footer__item{
+        margin-top: 20px;
+        margin-bottom: 0;
+        
+    }
+
+    .footer .footer__item a{
+        color: rgb(14, 149, 233);
+        margin-top: 10px;
+    }
+
+    .footer p{
+        margin-top: 10px;    
+
+    }
+
+    .footer{
+        background-color: #f7f5f5;
+        height: 120px;
+    }
+
+}
